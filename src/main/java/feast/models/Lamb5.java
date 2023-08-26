@@ -6,11 +6,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class Lamb5 {
 
-    @Autowired
     private Goat6 goat6;
 
     @Override
     public String toString() {
         return "which is stuffed inside a goat, " + goat6.toString();
+    }
+
+    @Autowired
+    public void setGoat6(Goat6 goat6) {
+        this.goat6 = goat6;
     }
 }
