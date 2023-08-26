@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Duck2 {
-
+    @Autowired
     private Chicken3 chicken3;
 
     public Duck2(Chicken3 chicken3) {
